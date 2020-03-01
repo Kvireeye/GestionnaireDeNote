@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240sp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/choiseMenu"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_bleu_bleu_dark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            >
+            // Start First Button
+            <LinearLayout
+                android:id="@+id/btenseignant"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="0sp"
+                android:orientation="vertical"
+                android:background="@drawable/orange_orangedark_gradient"
+                android:onClick="cliqueButtonEnseignant"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cartable"
+                    android:tint="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/orange_orangedark_gradient"
+                    android:text="Enseignant"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        //End First Button
+
+        //Start second button
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5sp"
+
+            >
+            <LinearLayout
+                android:id="@+id/btetudiant"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="0sp"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_red_red_dark"
+                android:onClick="cliqueButtonEtudiant"
+
+                >
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/coiffe_etudiant"
+                    android:tint="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/gradient_red_red_dark"
+                    android:text="Etudiant"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        //End Second Button
+
+        //Start third Buttton
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5sp"
+
+            >
+            <LinearLayout
+                android:id="@+id/btadm"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="0sp"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_bleu_bleu_dark"
+                android:onClick="cliqueButtonAdm"
+
+                >
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/iconadm"
+                    android:tint="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/gradient_bleu_bleu_dark"
+                    android:text="Administration"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        //End Third Button
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

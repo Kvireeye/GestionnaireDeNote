@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240sp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/VoletAdm"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_bleu_bleu_dark"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="@string/barre_string_enseignant"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:background="@drawable/orange_orangedark_gradient"
+                android:layout_marginTop="2sp"
+                />
+
+            //Debut Premiere Ligne
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_marginTop="2sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/orange_orangedark_gradient_icon"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/newpeople"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_ajouter"
+                        />
+
+                </LinearLayout>
+                //Fin Premier Icone
+
+                // Debut Deuxieme
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/orange_orangedark_gradient_icon2"
+                    android:elevation="20in"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icone_liste"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_lister"
+                        />
+
+                </LinearLayout>
+
+
+                // Fin Deuxieme Icone
+
+                //Début Troisieme Icone
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/orange_orangedark_gradient_icon3"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:tint="@color/white"
+                        android:src="@drawable/icon_puzzle"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_modifier"
+                        />
+
+                </LinearLayout>
+                //Fin Troisième Icone
+
+            </LinearLayout>
+                //Fin Premiere Ligne
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_marginTop="2sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/orange_orangedark_gradient_icon"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_supprimer"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_supprimer"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:text="Etudiant"
+                android:background="@drawable/gradient_red_red_dark"
+                android:layout_marginTop="2sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_marginTop="2sp"
+                >
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_red_red_dark_icon"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/newpeople"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_ajouter"
+                        />
+
+                </LinearLayout>
+                //Fin Premier Icone
+
+                // Debut Deuxieme
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_red_red_dark_icon2"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icone_liste"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_lister"
+                        />
+
+
+                </LinearLayout>
+
+
+                // Fin Deuxieme Icone
+
+                //Début Troisieme Icone
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_red_red_dark_icon3"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_puzzle"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_modifier"
+                        />
+                    //Fin Troisième Icone
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_marginTop="2sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_red_red_dark_icon"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_supprimer"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_supprimer"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:text="@string/barre_string_etudiant"
+                android:background="@drawable/gradient_vert_vert_dark"
+                android:layout_marginTop="2sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_marginTop="2sp"
+                >
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_vert_vert_dark_icon"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_devoir"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_ajouter"
+                        />
+
+                </LinearLayout>
+                //Fin Premier Icone
+
+                // Debut Deuxieme
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_vert_vert_dark_icon2"
+                    android:elevation="20in"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_modif_devoir"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_modifier"
+                        />
+
+                </LinearLayout>
+
+
+                // Fin Deuxieme Icone
+
+                //Début Troisieme Icone
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_vert_vert_dark_icon3"
+                    android:elevation="20dp"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:src="@drawable/icon_block"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15sp"
+                        android:padding="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="@string/icon_string_supprimer"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_bleu_bleu_dark"
+                />
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

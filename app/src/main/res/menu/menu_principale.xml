@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemAcceuil"
+        android:title="Acceuil"
+        app:showAsAction = "never"/>
+
+    <item android:id="@+id/itemAdm"
+    android:title="Administration"
+        app:showAsAction="never"
+    />
+
+    <item android:id="@+id/itemEnseignant"
+            android:title="Enseignant"
+            app:showAsAction = "never"
+            />
+
+    <item android:id="@+id/itemEtudiant"
+            android:title="Etudiant"
+            app:showAsAction = "never"
+            />
+
+    <item android:id="@+id/itemQuitter"
+        android:title="Quitter"
+        app:showAsAction = "never"
+        />
+
+</menu>
