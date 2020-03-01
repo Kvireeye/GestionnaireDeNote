@@ -12,6 +12,7 @@
         <activity android:name=".MainAdm"/>
         <activity android:name=".MainEtudiant" />
         <activity android:name=".MainEnseignant" />
+        <activity android:name=".MainAjouterDevoir" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
