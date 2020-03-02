@@ -142,6 +142,7 @@
                     android:orientation="vertical"
                     android:background="@drawable/orange_orangedark_gradient_icon"
                     android:elevation="20dp"
+                    android:onClick="cliqueBoutonAjouterDevoir"
 
                     >
 

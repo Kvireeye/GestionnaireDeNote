@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
                 return true;
             case (R.id.itemAdm):
-                setContentView(R.layout.activity_main);
+                setContentView(R.layout.activity_main_adm);
                 return true;
             case (R.id.itemEnseignant):
                 setContentView(R.layout.activity_main_enseignant);
@@ -57,4 +57,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-}
+
+
+    public void cliqueBoutonAjouterDevoir (View v){
+        setContentView(R.layout.activity_ajouter_devoir);
+    }
+    }
+

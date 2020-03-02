@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".AjouterDevoir">
+   //Debut layout id etudiant
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/text_input_id_etudiant"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:counterMaxLength="8"
+       app:errorEnabled="true">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:hint="@string/id_etudiant"
+         android:inputType="number"/>
+   </com.google.android.material.textfield.TextInputLayout>
+   //Fin layout id etudiant
+
+
+   //Debut layout id enseignant
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/text_input_id_enseignant"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:counterEnabled="true"
+       app:counterMaxLength="100"
+       app:errorEnabled="true">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/id_enseignant"
+          android:maxLength="8"
+          android:inputType="number"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+   //Fin layout id enseignant
+
+   //Debut layout date matiere
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/matiere"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:counterEnabled="true"
+       app:counterMaxLength="50"
+       app:errorEnabled="true">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/matiere"
+          android:inputType="text"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+   //Fin layout date matiere
+
+   //Debut layout date note
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/note"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:counterEnabled="true"
+       app:counterMaxLength="50"
+       app:errorEnabled="true">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/Note"
+          android:inputType="number"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+   //Fin layout date matiere
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+      android:text="@string/type_devoir"
+      android:textSize="20sp"
+       android:textColor="@color/black"/>
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight="1">
+      <RadioButton
+          android:id="@+id/dvs_continu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Continu"
+          android:textSize="20sp"
+
+          />
+      <RadioButton
+          android:id="@+id/dvs_terminal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Terminal"
+          android:textSize="20sp"
+
+
+          />
+   </RadioGroup>
+
+
+</LinearLayout>
+   //Debut boutton confirmez
+   <Button
+       android:id="@+id/buttonConfirmerDevoirEtudiant"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/confirmer"/>
+   // Fin boutton confirmer
+   //Debut boutton confirmez
+   <Button
+       android:id="@+id/buttonAnnulerDevoirEtudiant"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/annuler"/>
+   // Fin boutton confirmer
+</LinearLayout>

@@ -13,5 +13,19 @@
     <string name="icon_string_devoir">Devoir</string>
     <string name="icon_string_barre_devoir">Devoir</string>
     <string name="icon_string_modifier">Modifier</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="naissance">Date de Naissance</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="id_etudiant">Numéro Etudiant</string>
+    <string name="id_enseignant">Numéro Enseignant</string>
+    <string name="matiere">Matière</string>
+    <string name="type_devoir">Type de devoir</string>
+    <string name="Note">Note</string>
+    <string name="annuler">Annuler</string>
+
+
+
+
 
 </resources>
