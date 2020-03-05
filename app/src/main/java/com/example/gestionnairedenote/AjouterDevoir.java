@@ -23,5 +23,11 @@ public class AjouterDevoir extends AppCompatActivity {
     public void cliqueBoutonAjouterDevoir (View v) {
         setContentView(R.layout.activity_ajouter_devoir);
     }
-}
+
+    public void cliqueAnnuler1(View v) {
+        finishAffinity();
+
+            }
+    }
+
 

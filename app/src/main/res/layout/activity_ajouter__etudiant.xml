@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".AjouterDevoir">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_NomEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="50"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_PrenomEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="50"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prenom"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/date_naissance_etd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/naissance"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        
+        <EditText
+            android:id="@+id/ed_naissance"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/genre"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/gender_fem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feminin"
+                android:textSize="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/gender_masc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masculin"
+                android:textSize="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/gender_autre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autre"
+                android:textSize="20sp"
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

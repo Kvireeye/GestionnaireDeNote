@@ -62,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
     public void cliqueBoutonAjouterDevoir (View v){
         setContentView(R.layout.activity_ajouter_devoir);
     }
+
+    public void cliqueBoutonAjouterEtudiant (View v){
+        setContentView(R.layout.activity_ajouter__etudiant);
+    }
     }
 

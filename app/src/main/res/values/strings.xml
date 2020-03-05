@@ -23,9 +23,10 @@
     <string name="type_devoir">Type de devoir</string>
     <string name="Note">Note</string>
     <string name="annuler">Annuler</string>
-
-
-
+    <string name="genre">Genre</string>
+    <string name="masculin">Masculin</string>
+    <string name="feminin">Féminin</string>
+    <string name="autre">Autre</string>
 
 
 </resources>

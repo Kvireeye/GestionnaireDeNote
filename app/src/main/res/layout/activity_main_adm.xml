@@ -70,7 +70,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="15sp"
                         android:src="@drawable/newpeople"
-                        android:tint="@color/white" />
+                        android:tint="@color/white"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -234,6 +235,7 @@
                     android:orientation="vertical"
                     android:background="@drawable/gradient_red_red_dark_icon"
                     android:elevation="20dp"
+                    android:onClick="cliqueBoutonAjouterEtudiant"
 
                     >
 
@@ -511,14 +513,7 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:textSize="28sp"
-                android:textColor="@color/white"
-                android:background="@drawable/gradient_bleu_bleu_dark"
-                />
+
         </LinearLayout>
 
 

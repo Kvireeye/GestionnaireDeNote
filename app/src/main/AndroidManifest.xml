@@ -9,17 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AjouterDevoir"></activity>
-        <activity android:name=".MainAdm" />
-        <activity android:name=".MainEtudiant" />
-        <activity android:name=".MainEnseignant" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ajouter__etudiant"></activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AjouterDevoir" />
+        <activity android:name=".MainAdm" />
+        <activity android:name=".MainEtudiant" />
+        <activity android:name=".MainEnseignant" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
