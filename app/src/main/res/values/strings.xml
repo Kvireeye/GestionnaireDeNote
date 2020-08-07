@@ -27,6 +27,7 @@
     <string name="masculin">Masculin</string>
     <string name="feminin">Féminin</string>
     <string name="autre">Autre</string>
+    <string name="date_de_naissance">Date de naissance:</string>
 
 
 </resources>

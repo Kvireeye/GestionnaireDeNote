@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16sp"
-    tools:context=".AjouterDevoir">
+    tools:context=".AjouterDevoir"
+    android:layout_marginTop="25sp">
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,31 +36,20 @@
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Birthdate_edt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:textSize="20sp"
+        app:counterMaxLength="50"
+        app:errorEnabled="true">
 
-        <TextView
-            android:id="@+id/date_naissance_etd"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/naissance"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            />
-
-        
-        <EditText
-            android:id="@+id/ed_naissance"
-            android:layout_width="200sp"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:textAlignment="center"
-            />
-
-    </LinearLayout>
+            android:hint="@string/date_de_naissance"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,6 +96,32 @@
 
 
     </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<Button
+android:id="@+id/confirmer_devoir"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/confirmer"/>
+
+<Button
+android:id="@+id/annuler_devoir"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/annuler"
+android:onClick="cliqueAnnuler1"/>
 
 </LinearLayout>
 

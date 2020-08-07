@@ -16,62 +16,7 @@ class Principal {
         Scanner scanner = new Scanner(System.in);
         Boolean boucle = true;
 
-        while (boucle) {
-            System.out.println("Que souhaitez vous faire?");
-            System.out.println("1 - Créer un nouvel étudiant");
-            System.out.println("2 - Lister les étudiants");
-            System.out.println("3 - Supprimer un étudiant");
-            System.out.println("4 - Créer un nouvel enseignant");
-            System.out.println("5 - Lister les enseignants");
-            System.out.println("6 - Supprimer un enseignant");
-            System.out.println("7 - Saisir une note");
-            System.out.println("8 - Modifier une note");
-            System.out.println("9 - Consulter les notes attribué par un enseignant");
-            System.out.println("10 - Consulter les notes de l'étudiant");
-            System.out.println("11 - Supprimez une note de l'étudiant");
-            System.out.println("12 - Quitter");
-            System.out.print("> ");
 
-            String lecture = scanner.next();
-
-            switch (lecture) {
-                case "1":
-                    creerEtudiants(list_etu, scanner);
-                    break;
-                case "2":
-                    listerEtudiants(list_etu);
-                    break;
-                case "3":
-                    supprimerEtudiant(list_etu, scanner);
-                    break;
-                case "4":
-                    creerEnseignant(list_esg, scanner);
-                    break;
-                case "5":
-                    listerEnseigant(list_esg);
-                    break;
-                case "6":
-                    supprimerEnseignant(list_esg, scanner);
-                    break;
-                case "7":
-                    saisirNote(list_dvs, scanner);
-                    break;
-                case "8":
-                    modifierNote(list_dvs, scanner);
-                    break;
-                case "9":
-                    consulterNoteEnseignant(list_dvs, scanner);
-                    break;
-                case "10":
-                    consulterNoteEtudiant(list_dvs, scanner);
-                    break;
-                case "11":
-                    supprimerUneNote(list_dvs, scanner, scanner);
-                    break;
-                case "12":
-                    boucle = false;
-            }
-        }
     }
 
     private static void modifierNote(List<Devoir> list_dvs, Scanner scanner) {
